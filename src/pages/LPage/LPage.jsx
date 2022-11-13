@@ -11,7 +11,7 @@ import AuthContext from "../../contexts/AuthContext";
 // import AuthContext from "../../contexts/AuthContext";
 
 const LPage = () => {
-  const token = localStorage.getItem("token");
+  // const token = localStorage.getItem("token");
   const loggedin = localStorage.getItem("loggedin");
   const { logout } = useContext(AuthContext);
 

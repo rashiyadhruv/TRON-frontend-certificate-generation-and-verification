@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-no-useless-fragment */
 import React, { useContext, useState } from "react";
 import styles from "./Login.module.scss";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import AuthContext from "../../contexts/AuthContext";
 import { ReactComponent as EyeOff } from "../../assets/eye-off.svg";
 import { ReactComponent as EyeOpen } from "../../assets/eye open.svg";

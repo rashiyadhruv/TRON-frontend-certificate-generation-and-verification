@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import styles from "./Vercert.module.scss";
 
-import { ReactComponent as Warn } from "../../../../assets/warn.svg";
-import { ReactComponent as Checked } from "../../../../assets/checked.svg";
+// import { ReactComponent as Warn } from "../../../../assets/warn.svg";
+// import { ReactComponent as Checked } from "../../../../assets/checked.svg";
 import { ReactComponent as Home } from "../../../../assets/home.svg";
 
 import { Link } from "react-router-dom";
 
 const Vercert = ({ imglink }) => {
-  const [checked, setChecked] = useState(0);
+  // const [checked, setChecked] = useState(0);
 
   return (
     <div className={styles.main}>

@@ -8,7 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Vercert from "./components/Vercert/Vercert";
 import Navbar from "../../components/Navbar/Navbar";
 import axios from "axios";
-import { upload } from "@testing-library/user-event/dist/upload";
+// import { upload } from "@testing-library/user-event/dist/upload";
 
 const Verify = () => {
   const [cid, setcid] = useState("");
