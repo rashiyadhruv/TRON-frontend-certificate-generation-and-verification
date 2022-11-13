@@ -42,6 +42,7 @@ const Canvas2 = ({
     // console.log("certs2", imgcids);
     // console.log("finalcerts", finalcerts1);
     // console.log("certimg", certimg);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     setColumns(columns);
     setFields(fields);
     let temp = [];
@@ -59,7 +60,8 @@ const Canvas2 = ({
     setTimeout(() => {
       makeCertificate();
     }, 100);
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []); // eslint-disable-next-line react-hooks/exhaustive-deps
 
   const notify = () => {
     toastId.current = toast("Uploading to IPFS & downloading Zip...", {

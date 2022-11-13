@@ -33,8 +33,10 @@ const Canvas1 = ({
   const toastId = useRef(null);
   // let fieldss = [];
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     setCertimg(img);
     if (certs1?.length > 0) {
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       setColumns(Object.keys(certs1[0]));
 
       let fieldss = Object.keys(certs1[0])?.map((ele, i) => {
@@ -63,7 +65,8 @@ const Canvas1 = ({
     // console.log("imggg", certimg);
 
     makeCertificate();
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);// eslint-disable-next-line react-hooks/exhaustive-deps
 
   const notify = () => {
     toastId.current = toast("Uploading to IPFS...", {
