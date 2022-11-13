@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+	padding: 0;
+  overflow: hidden;
+	box-sizing: border-box;
+	font-size: 1rem;
+
+}
+
+
+@font-face {
+  font-family: e13b;
+  src: url("./assets/fonts/MICRE13B.ttf");
+}
+
+@font-face {
+  font-family: devnagari;
+  src: url("./assets/fonts/Devnew.ttf");
+}
+

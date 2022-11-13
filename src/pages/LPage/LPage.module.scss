@@ -1,0 +1,219 @@
+.lpage {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../../assets/Frame\ 11994.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: column;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .topBar {
+    margin-top: 5vh;
+    height: 30vh;
+    width: 98vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    svg {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+  }
+  .container {
+    background-color: transparent;
+    height: 38vh;
+    width: 98vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0.5rem;
+
+    .left {
+      height: 100%;
+      width: 31%;
+      display: flex;
+      background-color: white;
+      padding: 1.5rem 1rem;
+      border-radius: 1rem;
+
+      .innerLeft {
+        height: 100%;
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+      }
+
+      .innerRight {
+        height: 100%;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 0 1rem;
+        align-items: flex-start;
+
+        .heading {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 25px;
+
+          color: #1c4576;
+        }
+
+        .text {
+          font-family: sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 18px;
+          display: flex;
+          justify-content: flex-start;
+          width: 90%;
+          text-align: left;
+        }
+
+        .buttonLeft {
+          padding: 0.6rem 1rem;
+          text-align: center;
+          width: max-content;
+          border-radius: 5px;
+          background: linear-gradient(87.08deg, #d76cbf 0%, #b01f8f 100%);
+
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 19px;
+          /* identical to box height */
+
+          text-align: center;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .buttonLeft2 {
+          padding: 0.6rem 1rem;
+          text-align: center;
+          width: max-content;
+          border-radius: 5px;
+          background: linear-gradient(267.49deg, #098138 0%, #2fb564 100%);
+
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 19px;
+          /* identical to box height */
+
+          text-align: center;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+    .link {
+      text-decoration: none;
+      color: white;
+    }
+    .right {
+      height: 100%;
+      width: 31%;
+      display: flex;
+      background-color: white;
+      padding: 1.5rem 1rem;
+      border-radius: 1rem;
+
+      .innerLeft {
+        height: 100%;
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+      }
+
+      .innerRight {
+        height: 100%;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 0 1rem;
+        align-items: flex-start;
+
+        .heading {
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 25px;
+
+          color: #1c4576;
+        }
+
+        .text {
+          font-family: sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 22px;
+          display: flex;
+          justify-content: flex-start;
+          width: 80%;
+          text-align: left;
+        }
+
+        .buttonLeft {
+          padding: 0.6rem 1rem;
+          text-align: center;
+          width: max-content;
+          border-radius: 5px;
+          background: linear-gradient(267.49deg, #1f869c 0%, #4dbad2 100%);
+
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 19px;
+          /* identical to box height */
+
+          text-align: center;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+.link3 {
+}
+.bottom {
+  margin-top: 20vh;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  span {
+    color: red;
+    margin: 0 4px;
+  }
+  .name {
+    font-weight: 600;
+    margin-left: 4px;
+  }
+}

@@ -1,0 +1,95 @@
+.main {
+  width: 90%;
+  height: 88%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  background: #ffffff;
+  box-shadow: 0px 0px 8.45591px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  object {
+    width: 65%;
+    height: 80vh;
+    object-fit: contain;
+    border-bottom: 2px solid black;
+    border-right: 1px solid black;
+  }
+  &_content {
+    width: 30%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    &_inst {
+      width: 100%;
+      height: max-content;
+      text-align: left;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      color: #666e78;
+    }
+    &_notice {
+      height: 45%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      font-weight: 600;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 16px;
+      line-height: 22px;
+      background: rgba(138, 34, 34, 0.11);
+      color: #8a2222;
+      svg {
+        height: 28px;
+        width: 28px;
+      }
+      &_green {
+        height: 35%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        font-weight: 600;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 16px;
+        line-height: 22px;
+        background: #cbe1d7;
+        color: #31865d;
+        svg {
+          height: 28px;
+          width: 28px;
+        }
+      }
+    }
+    &_btn {
+      width: 60%;
+      height: 46px;
+      background: #386caa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      color: #ffffff;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      svg {
+        transform: translateY(2px);
+        height: 24px;
+        width: 24px;
+        margin-left: 5px;
+      }
+    }
+  }
+}

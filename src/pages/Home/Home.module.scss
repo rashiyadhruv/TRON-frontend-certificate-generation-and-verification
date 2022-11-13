@@ -1,0 +1,269 @@
+@import "../../styles/variables";
+$borderRadius: 10px;
+
+.home {
+  box-sizing: border-box;
+  height: 99vh;
+  width: 100vw;
+  background-color: $white;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .container {
+    top: 9vh;
+    background-color: $white;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &Left {
+      height: 88vh;
+      width: 35%;
+      background-color: $white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1.5rem 0 0;
+      gap: 1.5rem;
+      border-radius: &$borderRadius;
+
+      .leftTop {
+        height: 50%;
+        width: 90%;
+        position: relative;
+        @include center;
+        border-radius: $borderRadius;
+        background-color: $white;
+        background-image: repeating-linear-gradient(
+            0deg,
+            #333333,
+            #333333 10px,
+            transparent 10px,
+            transparent 20px,
+            #333333 20px
+          ),
+          repeating-linear-gradient(
+            90deg,
+            #333333,
+            #333333 10px,
+            transparent 10px,
+            transparent 20px,
+            #333333 20px
+          ),
+          repeating-linear-gradient(
+            180deg,
+            #333333,
+            #333333 10px,
+            transparent 10px,
+            transparent 20px,
+            #333333 20px
+          ),
+          repeating-linear-gradient(
+            270deg,
+            #333333,
+            #333333 10px,
+            transparent 10px,
+            transparent 20px,
+            #333333 20px
+          );
+        background-size: 2px 100%, 100% 2px, 2px 100%, 100% 2px;
+        background-position: 0 0, 0 0, 100% 0, 0 100%;
+        background-repeat: no-repeat;
+
+        .start {
+          cursor: pointer;
+          background-color: $white;
+          height: fit-content;
+          width: fit-content;
+          padding: 1.5rem;
+          border-radius: $borderRadius;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          align-items: center;
+          justify-content: center;
+
+          .startText {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            color: $textColor;
+          }
+        }
+      }
+
+      .leftBottom {
+        height: 42%;
+        width: 90%;
+        text-align: left;
+
+        border-radius: $borderRadius;
+        background-color: #e2ebf5;
+        padding: 1.5rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0.8rem;
+        .heading {
+          font-size: 1.3rem;
+          font-weight: 600;
+          color: #122e50;
+          margin-bottom: 0.4rem;
+        }
+        .text {
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+
+      &_addnew {
+        height: 100%;
+        width: 90%;
+        background: #ffffff;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        display: flex;
+        margin-left: 20px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 20px;
+        text-align: left;
+        &_head {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 25px;
+          color: #122e50;
+        }
+
+        .form {
+          width: 100%;
+          height: 70%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: flex-start;
+          min-height: 100px;
+          &_head {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #283545;
+          }
+          input[type="text"] {
+            width: 70%;
+            height: 40px;
+            background: #ffffff;
+            border: 0.338236px solid #758a92;
+            border-radius: 5px;
+            padding-left: 20px;
+            outline: none;
+          }
+          input [type="file"] {
+            width: 50%;
+            height: 40px;
+            background: #e1e9f2;
+            border: 0.338236px solid #386caa;
+            border-radius: 5px;
+            padding-left: 20px;
+          }
+          .temp {
+            width: 0.1px;
+            height: 0.1px;
+            opacity: 0.1;
+            overflow: hidden;
+            position: absolute;
+            z-index: 1;
+          }
+          .csv {
+            width: 0.1px;
+            height: 0.1px;
+            opacity: 0.1;
+            overflow: hidden;
+            position: absolute;
+            z-index: 1;
+          }
+          .file_input__label {
+            cursor: pointer;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 600;
+            color: #386caa;
+            font-size: 14px;
+            padding: 10px 12px;
+            background: #e1e9f2;
+            border: 1px solid #386caa;
+            border-radius: 5px;
+            svg {
+              height: 18px;
+              margin-right: 4px;
+            }
+          }
+        }
+        &_submit {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 40%;
+          height: 40px;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 19px;
+          text-align: center;
+          color: #ffffff;
+          background: #386caa;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    &Right {
+      height: 88vh;
+      width: 65%;
+      position: relative;
+      right: 1rem;
+      background-color: $white;
+    }
+  }
+}
+
+.select,
+.select * {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.select {
+  position: relative;
+  background-color: #e1e9f2;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  select {
+    background: #122e50;
+    font-size: 16px;
+    font-weight: normal;
+    color: #386caa;
+    max-width: 100%;
+    padding: 0px 22px 0px 2px;
+    border: 8px solid #e1e9f2 !important;
+    border-radius: 10px;
+    background-color: transparent;
+    &:active,
+    &:focus {
+      outline: none;
+      box-shadow: none;
+      border: none;
+    }
+  }
+}
