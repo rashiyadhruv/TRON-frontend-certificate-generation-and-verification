@@ -44,7 +44,7 @@ const Vercert = ({ imglink }) => {
               <Checked />
               The degree has been verified both digitally and physically.
             </div>
-            <Link className={styles.main_content_btn} to="/home">
+            <Link className={styles.main_content_btn} to="/">
               Back to Home <Home />
             </Link>
           </>

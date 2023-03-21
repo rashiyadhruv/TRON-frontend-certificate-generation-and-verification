@@ -89,7 +89,17 @@ const LPage = () => {
         </div>
       </div>
       <div className={styles.bottom}>
-        Made with <span>❤</span> by <div className={styles.name}>Pynodes</div>
+        Made with <span>❤</span> by{" "}
+        <div className={styles.name}>
+          <a href="https://www.linkedin.com/in/dhruv-rashiya-6164791b8/">
+            Rashiya Dhruv
+          </a>{" "}
+          and
+          <a href="https://www.linkedin.com/in/arunava-barua-bb307a201/">
+            {" "}
+            Arunava Barua
+          </a>
+        </div>
       </div>
     </div>
   );

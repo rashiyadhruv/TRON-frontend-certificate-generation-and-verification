@@ -28,7 +28,7 @@ const Navbar = () => {
             <Logout
               onClick={() => {
                 logout();
-                navigate("/home");
+                navigate("/");
               }}
             />
           </>

@@ -26,7 +26,7 @@ const Vercert = ({ imglink }) => {
         <div className={styles.main_content_notice_green}>
           The degree can be downloaded from the options given.
         </div>
-        <Link className={styles.main_content_btn} to="/home">
+        <Link className={styles.main_content_btn} to="/">
           Back to Home <Home />
         </Link>
       </div>

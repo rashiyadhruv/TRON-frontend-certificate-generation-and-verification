@@ -305,7 +305,7 @@ const Canvas2 = ({
             update();
             saveAs(content, zipName);
             setTimeout(() => {
-              navigate("/home");
+              navigate("/");
             }, [3000]);
           })
           .catch(function (error) {
