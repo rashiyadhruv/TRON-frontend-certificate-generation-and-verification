@@ -1,6 +1,6 @@
 import "./App.css";
 import Login from "./pages/Login/Login";
-import { Route, BrowserRouter, Routes, Navigate } from "react-router-dom";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Verify from "./pages/Verify/Verify";
 import LPage from "./pages/LPage/LPage";
