@@ -22,7 +22,7 @@ const Login = () => {
     setLoading(true);
     var config = {
       method: "post",
-      url: `${process.env.REACT_APP_SERVER_URL}/v1/logIn`,
+      url: `/api/v1/logIn`,
       headers: {
         "Content-Type": "application/json",
       },
