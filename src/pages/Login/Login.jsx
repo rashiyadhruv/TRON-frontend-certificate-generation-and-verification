@@ -36,7 +36,7 @@ const Login = () => {
       .then(function (response) {
         if (response?.data?.token != null || response?.data?.token !== "") {
           login(response?.data?.accessToken);
-          navigate("/home");
+          navigate("/");
           setLoading(false);
         }
       })
@@ -103,7 +103,7 @@ const Login = () => {
           className={styles.main_button}
           onClick={() => {
             handleLogin();
-            // console.log("clicked");
+            console.log("clicked");
           }}
         >
           {loading ? <Loader /> : "Sign In"}

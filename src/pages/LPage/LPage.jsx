@@ -8,10 +8,9 @@ import image from "../../assets/image.png";
 import { Link } from "react-router-dom";
 import React, { useContext } from "react";
 import AuthContext from "../../contexts/AuthContext";
-// import AuthContext from "../../contexts/AuthContext";
 
 const LPage = () => {
-  // const token = localStorage.getItem("token");
+  const token = localStorage.getItem("token");
   const loggedin = localStorage.getItem("loggedin");
   const { logout } = useContext(AuthContext);
 
@@ -30,27 +29,27 @@ const LPage = () => {
         <div className={styles.topBar}></div>
       )}
       <div className={styles.container}>
-        {/* {token !== null && loggedin === "true" ? ( */}
-        <div className={styles.left}>
-          <div className={styles.innerLeft}>
-            <Ill1 />
-          </div>
+        {token !== null && loggedin === "true" ? (
+          <div className={styles.left}>
+            <div className={styles.innerLeft}>
+              <Ill1 />
+            </div>
 
-          <div className={styles.innerRight}>
-            <div className={styles.heading}>Generate Certificate</div>
-            <div className={styles.text}>
-              Generate any number of custom certificates in batches using your
-              own template
-            </div>
-            <div className={styles.buttonLeft}>
-              <Link className={styles.link} to="/generate">
-                Click to generate
-              </Link>{" "}
-              <Right />
+            <div className={styles.innerRight}>
+              <div className={styles.heading}>Generate Certificate</div>
+              <div className={styles.text}>
+                Generate any number of custom certificates in batches using your
+                own template
+              </div>
+              <div className={styles.buttonLeft}>
+                <Link className={styles.link} to="/generate">
+                  Click to generate
+                </Link>{" "}
+                <Right />
+              </div>
             </div>
           </div>
-        </div>
-        {/* ) : null} */}
+        ) : null}
 
         <div className={styles.right}>
           <div className={styles.innerLeft}>

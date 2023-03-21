@@ -15,12 +15,12 @@ function App() {
       <div className="App">
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Navigate to="/home" />} exact />
+            {/* <Route path="/" element={<Navigate to="/home" />} exact /> */}
             <Route path="/qvjr4:tgj$$1*aedf[" element={<Login />} exact />
             <Route path="/generate" element={<Home />} exact />
             <Route path="/verify" element={<Verify />} exact />
             <Route path="/download" element={<Download />} exact />
-            <Route path="/home" element={<LPage />} exact />
+            <Route path="/" element={<LPage />} exact />
           </Routes>
         </BrowserRouter>
       </div>

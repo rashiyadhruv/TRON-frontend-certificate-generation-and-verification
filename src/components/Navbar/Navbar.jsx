@@ -13,7 +13,7 @@ const Navbar = () => {
       <div
         className={styles.logo}
         onClick={() => {
-          navigate("/home");
+          navigate("/");
         }}
       >
         Home
